@@ -1,4 +1,2 @@
-Bus 
-Car 
-Truck
-Motorcycle
+Floods
+No Flood
