@@ -1,6 +1,6 @@
-# CPE019_FINAL_PROJECT
+# CPE126_FINAL_PROJECT
 
-A Final Requirement for CPE 019 - Emerging Technologies 2 
+A Final Requirement for CPE 126 - Introduction to Artificial Intelligence 
 
 <b><h3>Objective(s): </h3></b>
 
