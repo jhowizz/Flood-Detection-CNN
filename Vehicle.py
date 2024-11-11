@@ -96,11 +96,18 @@ if selected == "About Project":
             st.write(
                 """
                 <div style='text-align: justify;'>
-                    Vehicle classification is crucial for intelligent transportation systems, focusing on identifying and categorizing buses, trucks, cars, and motorcycles. 
-                    Buses facilitate public transit, trucks handle large-scale freight, cars provide personal travel flexibility, and motorcycles offer efficient short-distance travel.
-                    Accurate classification enhances traffic management, law enforcement, and road safety. Understanding the specific roles and characteristics of each vehicle type enables
-                    more effective traffic control, regulatory compliance, and targeted safety measures. This leads to a more efficient and safer transportation network, benefiting both authorities
-                    and road users. 
+                    Flooding is one of the most frequent and damaging natural disasters in Metro Manila,
+                    resulting in significant economic loss, displacement of residents, and disruption of daily life. As
+                    climate change and urbanization continue to exacerbate this issue, there is a growing need for
+                    effective flood prediction systems that can offer timely warnings and risk assessments. In this
+                    project, we propose the development of a flood prediction system using deep learning
+                    algorithms, specifically Convolutional Neural Networks (CNN) and Long Short-Term Memory
+                    (LSTM) networks, to analyze historical and real-time meteorological data to predict the
+                    likelihood of flooding in various parts of Metro Manila.
+                    By integrating CNN for spatial pattern recognition and LSTM for temporal sequence
+                    analysis, we aim to create a hybrid model that can offer accurate and timely predictions. The
+                    system will focus on learning from environmental features such as rainfall, water levels, and
+                    geographic data, allowing for efficient flood risk assessment and disaster preparedness. 
                 </div>
                 """,
                 unsafe_allow_html=True
@@ -118,9 +125,8 @@ if selected == "About Project":
                 <div style='text-align: justify;'>
                     The dataset for this project came from this link: <a href='https://www.kaggle.com/datasets/kaggleashwin/vehicle-type-recognition' target='_blank'>Kaggle Vehicle Type Recognition</a>. <br>
                     It contains the following: <br>
-                    - TRUCK  <br>                  
-                    - CAR    <br>
-                    - MOTORCYCLE  <br>
+                    - Flood  <br>                  
+                    - No flood    <be>
                 </div>
                 """,
                 unsafe_allow_html=True
@@ -129,8 +135,8 @@ if selected == "About Project":
                 st_lottie(to_path, height=250, key="h1")
 
 
-# Vehicle Classification
-if selected == "Vehicle Classification":
+# Flood Classification
+if selected == "Flood Classification":
      st.title("Model Prediction")
      test_image = st.file_uploader("Choose an Image:")
      if test_image is not None:
@@ -139,7 +145,7 @@ if selected == "Vehicle Classification":
              st.write("Predicting...")
              labels = load_labels("labels.txt")
              predicted_sport = predict(test_image, model, labels)
-             st.success(f"Predicted Vehicle Category: {predicted_sport}")
+             st.success(f"Predicted Flood Category: {predicted_sport}")
 
 # Team Page
 if selected == "Team":
@@ -150,11 +156,9 @@ if selected == "Team":
         with left_column:
             st.write(
                 """
-                Dela cruz, Ivan Kenneth B.<br>
-                Empaynado, Shenia J.<br>
-                Españo, Rens S.<br>
-                Eustaquio, Neil Marco C.<br>
-                Fermin, Jozette P.<br>
+                Lim, Jhoris T.<br>
+                Cadongonan, Nicholo <br>
+                Masangkay, Shan Joshua C.<br>
             </div>
             """,
                 unsafe_allow_html=True
